@@ -1,0 +1,8 @@
+name: CubeUserClass
+main: com.cube.user.CubeUserClassPlugin
+version: 1.0
+depend: [CubeShopAPI]
+
+commands:
+  등급:
+    description: Cube Server Class System --> /class [command...]
