@@ -112,12 +112,8 @@ public class ClassManager {
      * 주기 = 30sec
      */
     public void updateScheduler() {
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(CubeUserClassPlugin.instance, new Runnable() {
-            @Override
-            public void run() {
-                update();
-            }
-        }, 0L, 600L);
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(CubeUserClassPlugin.instance,
+                () -> update(), 0L, 600L);
     }
 
 }
